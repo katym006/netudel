@@ -1,0 +1,172 @@
+/* хедер */
+.hero-title {
+  text-align: center;
+  font-size: clamp(32px, 8vw, 64px);
+  line-height: 0.9;
+  margin-top: 36px;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 420px; 
+  overflow: hidden;
+  background: transparent;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tags {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 0 80px;
+}
+
+.tag {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  color: var(--blue);
+  background: transparent;
+  border: 2px solid rgba(0,97,116,0.9);
+  padding: 10px 22px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: rgba(0,97,116,0.06);
+  transform: translateY(-3px);
+}
+
+
+/* текст статьи */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.intro-section {
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr; 
+  gap: 40px;
+  align-items: start;
+  align-content: start;
+}
+
+.intro-title {
+  font-family: var(--header-font);
+  color: var(--blue);
+  font-size: clamp(48px, 8.5vw, 96px); 
+  line-height: 0.85;
+  letter-spacing: -1px;
+  margin-top: 6px; 
+  text-transform: none;
+}
+
+.intro-text {
+  max-width: 640px; 
+  margin-top: 18px;
+}
+
+.intro-text .p2 {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+
+/* футер */
+.footer-hero {
+  background-color: var(--orange);
+  padding: 30px 0 120px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+/* Навигация */
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+
+/* Белый блок с картинкой */
+.hero-card {
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+
+.hero-card img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Контакты */
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-contacts div:nth-child(2) {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-contacts div:nth-child(3) {
+  text-align: right;
+}
+
+/* Политика */
+.footer-policy {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* Копирайт */
+.footer-copy {
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: right;
+}
+
+/* Огромный текст */
+.footer-bg-text {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  font-size: 220px;
+  font-family: var(--header-font);
+  color: white;
+  opacity: 0.9;
+  pointer-events: none;
+  line-height: 0.8;
+}
