@@ -5,7 +5,7 @@
   margin-top: 50px;
   margin-bottom: 40px;
   letter-spacing: -1px;
-  padding-left: 120px;
+  padding-left: 170px;
 }
 
 .hero-image {
@@ -27,7 +27,7 @@
   display: flex;
   gap: 40px;
   justify-content: left;
-  padding: 40px 120px 60px;
+  padding: 40px 170px 60px;
 }
 
 .tag {
@@ -45,15 +45,15 @@
 
 /* текст статьи */
 .intro-section {
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 100px;
   background-color: var(--bg-color);
 }
 
 .text {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: 50px 0px;
 }
 
 .intro-grid {
@@ -71,7 +71,6 @@
   letter-spacing: -1.5px;
   font-weight: 700;
   margin: 0;
-  text-transform: lowercase;
 }
 
 .intro-text {
@@ -150,61 +149,62 @@
 
 
 
-/* подписаться */
+/* п */
 .subscribe-section {
-    background-image: url(../images/bg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    .subscribe {
-        padding-top: 198px ;
-        padding-bottom: 292px;
-        .subscribe-wrapper {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-self: center;
-            .subscribe-row {
-                .subscribe-row-wrapper {
-                    margin-top: 5px;
-                    display: flex;
-                    gap: 5px;
-                    input {
-                        outline: none;
-                        background-color: var(--bg-color);
-                    }
-                    input::placeholder {
-                            color: var(--blue);
-                            opacity: 50%;
-                        }
-                    input:focus {
-                        border-color: var(--orange);
-                        background-color: var(--bg-color);
-                        color: var(--blue);
-                    }
-                    input:not(:placeholder-shown) {
-                        border-color: var(--orange);
-                        background-color: var(--bg-color);
-                        color: var(--blue);
-                    }
-                    .subscribe-input {
-                        background-color: var(--bg-color);
-                        border: 1px solid var(--blue);
-                        border-radius: 10px;
-                        width: 357px;
-                        height: 30px;
-                        padding-left: 10px;
-                    }
-                }
-            }
-        }
-    }
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+.subscribe {
+  padding: 120px 0;
+}
+
+.subscribe-wrapper {
+  margin-top: 50px;
+}
+
+.popular-articles-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.article-card {
+  border: 1px solid var(--blue);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg-color);
+}
+
+.article-card-image {
+  height: 200px;
+}
+
+.article-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card-desc {
+  padding: 20px;
+  margin-top: -30px;
+  background: var(--bg-color);
+  border-radius: 16px;
+  position: relative;
+}
+
+.article-card-tags {
+  display: flex;
+  gap: 10px;
+  opacity: 0.6;
+}
 
 /* футер */
 .footer-hero {
-  background-color: var(--orange);
+  background-color: var(--blue);
   width: 100%;
   padding: 80px 0 120px;
   position: relative;
@@ -215,7 +215,7 @@
 .footer-nav {
   display: flex;
   justify-content: space-between;   
-  gap: 70px;                   /* расстояние между ссылками */
+  gap: 70px;                   
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
