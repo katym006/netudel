@@ -412,72 +412,67 @@ body {
 
 
 
-/* РєРѕРјР°РЅРґР° */
-.team-section {
-  max-width: var(--container-max);
+/* команда */
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 56px 24px;
+  padding: 60px 20px;
 }
 
-.section-title {
-  font-family: var(--header-font);
+/* Заголовок */
+.page-title {
   font-size: 64px;
-  line-height: 0.8;
-  color: var(--blue);
-  margin-bottom: 40px;
+  color: #0E5F6B;
+  margin-bottom: 50px;
 }
 
+/* Сетка */
 .team-grid {
-  display: flex;
-  gap: 48px;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
 }
 
-.profile {
-  width: calc((100% - 96px) / 3); 
+/* Карточка */
+.team-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.avatar {
-  width: 285px;
-  height: 285px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #eaeaea;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  margin-bottom: 16px;
-}
-.avatar img {
-  display: block;
+/* Фото */
+.team-photo {
   width: 100%;
-  height: 100%;
+  height: 260px;
   object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
 }
 
-.h3 {
-  font-family: var(--secondary-font);
+/* Имя */
+.team-name {
   font-size: 28px;
-  color: var(--blue);
+  color: #0E5F6B;
   margin-bottom: 6px;
 }
 
-.p2, .role {
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  color: rgba(0,63,76,0.85);
-  margin-bottom: 18px;
+/* Роль */
+.team-role {
+  color: #0E5F6B;
+  margin-bottom: 14px;
 }
 
-.contact {
+/* Телеграм */
+.team-tg {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-family: var(--primary-font);
-  font-size: 16px;
-  color: var(--blue);
+  gap: 10px;
+  color: #0E5F6B;
+  text-decoration: none;
+}
+
+.team-tg img {
+  width: 28px;
+  height: 28px;
 }
 
 
