@@ -37,8 +37,9 @@
         }
     }
 }
+
 /* херо блок */
-.hero-title {
+.article-hero__title {
   text-align: left;
   line-height: 0.9;
   margin-top: 50px;
@@ -47,14 +48,14 @@
   padding-left: 170px;
 }
 
-.hero-image {
+.article-hero__image {
   width: 100%;
-  height: 273px; 
+  height: 260px; 
   overflow: hidden;
   background: transparent;
 }
 
-.hero-image img {
+.article-hero__image img {
   display: block;
   width: 100%;
   height: 100%;
@@ -62,14 +63,14 @@
   object-position: center;
 }
 
-.tags {
+.article-tags {
   display: flex;
   gap: 40px;
   justify-content: left;
   padding: 40px 170px 60px;
 }
 
-.tag {
+.article-tag {
   font-family: var(--primary-font);
   font-size: 24px;
   color: var(--blue);
@@ -79,8 +80,6 @@
   border-radius: 10px;
   cursor: pointer;
 }
-
-
 
 /* текст статьи */
 .intro-section {
@@ -130,7 +129,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 /* TITLE */
@@ -138,46 +137,47 @@
   font-size: 64px;
   font-family: var(--header-font);
   color: var(--blue);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-/* GRID СЕТКА */
+/* GRID */
 .why-grid {
   display: grid;
-  font-family: var(--secondary-font);
-  color: var(--text-color);
   grid-template-columns: 180px 1fr;
   column-gap: 40px;
+  row-gap: 50px; /* ВАЖНО — расстояние между блоками */
+  font-family: var(--secondary-font);
+  color: var(--text-color);
 }
 
 /* BOX */
 .why-box {
-  grid-column: 1 / -1; /* на всю ширину */
+  grid-column: 1 / -1;
   position: relative;
   border: 1px solid var(--blue);
-  border-radius: 10px;
-  padding: 30px 40px 30px 220px;
-  margin-bottom: 40px;
+  border-radius: 12px;
+  padding: 35px 40px 35px 220px;
+  margin-bottom: 10px;
 }
 
 /* SCRIBBLE */
 .why-scribble {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 30px;
+  top: 30px;
   width: 140px;
 }
 
 /* TEXT */
 .why-box-text {
-  max-width: 700px;
-  line-height: 1.6;
+  max-width: 720px;
+  line-height: 1.7;
 }
 
 /* CONTENT */
 .why-content {
   grid-column: 2;
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .why-content p {
@@ -185,10 +185,11 @@
   line-height: 1.7;
 }
 
+/* SUBTITLE */
 .why-subtitle {
-  font-size: 28px;
+  font-size: 30px;
   font-family: var(--secondary-font);
-  color: var(--blue);
+  color: var(--text-color);
   margin: 30px 0 20px;
 }
 
@@ -197,15 +198,15 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 40px;
+  gap: 24px;
+  margin-top: 20px;
 }
 
 .why-images img {
   width: 100%;
-  height: 200px;
+  height: 210px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 /* "Виды хобби"  */
@@ -293,36 +294,7 @@
   gap: 20px;
 }
 
-.article-card {
-  border: 1px solid var(--blue);
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--bg-color);
-}
 
-.article-card-image {
-  height: 200px;
-}
-
-.article-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.article-card-desc {
-  padding: 20px;
-  margin-top: -30px;
-  background: var(--bg-color);
-  border-radius: 16px;
-  position: relative;
-}
-
-.article-card-tags {
-  display: flex;
-  gap: 10px;
-  opacity: 0.6;
-}
 
 /* футер */
 .footer-hero {
