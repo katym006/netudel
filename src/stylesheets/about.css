@@ -31,7 +31,7 @@
 }
 
 /* хедер */
-.hero {
+.media-hero {
   background-image: url('../images/hero-about.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -39,12 +39,12 @@
   height: 1100px;
 }
 
-.hero__inner {
+.media-hero__inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.hero__title {
+.media-hero__title {
   font-size: 72px;
   font-family: var(--header-font);
   font-weight: 800;
@@ -52,7 +52,7 @@
   margin-bottom: 40px;
 }
 
-.hero__content {
+.media-hero__content {
   max-width: 480px;
   display: flex;
   flex-direction: column;
@@ -61,16 +61,16 @@
   font-family: var(--primary-font);
 }
 
-.hero__text {
+.media-hero__text {
   font-size: 18px;
   line-height: 1.5;
   color: var(--blue);
 }
 
-.hero__btn {
+.media-hero__btn {
   display: inline-block;
   background: #F05A28;
-  color: #fff;
+  color: var(--bg-color);
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 10px;
@@ -248,26 +248,29 @@ body {
 /* о разделах */
 .container {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 80px auto;
   padding: 0 20px;
 }
 
+/* Заголовок */
 .page-title {
-  font-size: 48px;
+  font-size: 52px;
   font-family: var(--header-font);
   line-height: 1.1;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  color: var(--blue);
 }
 
+/* Сетка */
 .tiles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 32px;
 }
 
+/* Карточка */
 .tile {
-  height: 330px;
-  font-family: var(--primary-font);
+  height: 320px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--blue);
@@ -278,11 +281,12 @@ body {
 }
 
 .tile:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
+/* Картинка */
 .tile__media {
-  height: 220px;
+  height: 200px;
   position: relative;
 }
 
@@ -292,9 +296,11 @@ body {
   object-fit: cover;
 }
 
+
+/* Контент */
 .tile__body {
   flex: 1;
-  padding: 20px;
+  padding: 14px;
   background: var(--bg-color);
   display: flex;
   flex-direction: column;
@@ -302,8 +308,9 @@ body {
 }
 
 .tile__title {
-  font-size: 22px;
-  font-weight: 700;
+  font-family: var(--primary-font);
+  font-size: 26px;
+  font-weight: 800;
   color: var(--blue);
 }
 
@@ -311,44 +318,23 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 14px;
-  gap: 10px;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  gap: 12px;
   color: var(--blue);
 }
 
 .tile__line {
   flex: 1;
-  height: 1px;
+  height: 2px;
   background: var(--blue);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
+.arrow {
+  font-family: var(--primary-font);
+  font-size: 18px;
 }
 
-.join-grid {
-  display: grid;
-  grid-template-columns: 1fr 520px;
-  gap: 40px;
-  align-items: center;
-}
-
-.join-title {
-  font-size: 64px;
-  line-height: 0.9;
-  color: #0E5F6B;
-  margin-bottom: 24px;
-}
-
-.join-desc {
-  font-size: 16px;
-  line-height: 1.7;
-  max-width: 420px;
-  margin-bottom: 30px;
-  color: rgba(0,63,76,0.9);
-}
 
 /* соц сети */
 .socials {
@@ -366,7 +352,7 @@ body {
 .social {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 25px;
   text-decoration: none;
   color: var(--orange);
   font-size: 18px;
@@ -413,60 +399,99 @@ body {
 
 
 /* команда */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
+.socials {
+  display: flex;
+  gap: 24px;
 }
 
-/* Заголовок */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--orange);
+  font-size: 18px;
+}
+
+.social__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* картинка справа */
+.join-right {
+  display: flex;
+  justify-content: center;
+}
+
+.join-right img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+}
+
+
+/* TEAM */
 .page-title {
   font-size: 64px;
-  color: #0E5F6B;
+  color: var(--blue);
   margin-bottom: 50px;
 }
 
-/* Сетка */
+/* сетка */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
 }
 
-/* Карточка */
+/* карточка */
 .team-card {
+  font-family: var(--primary-font);
   display: flex;
   flex-direction: column;
 }
 
-/* Фото */
+/* фото */
 .team-photo {
   width: 100%;
-  height: 260px;
+  height: 285px;
   object-fit: cover;
   border-radius: 16px;
   margin-bottom: 20px;
 }
 
-/* Имя */
+/* имя */
 .team-name {
+  font-family: var(--primary-font);
   font-size: 28px;
-  color: #0E5F6B;
+  color: var(--blue);
   margin-bottom: 6px;
 }
 
-/* Роль */
+/* роль */
 .team-role {
-  color: #0E5F6B;
+  font-family: var(--primary-font);
+  color: var(--blue);
   margin-bottom: 14px;
 }
 
-/* Телеграм */
+/* телеграм */
 .team-tg {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #0E5F6B;
+  color: var(--blue);
   text-decoration: none;
 }
 
