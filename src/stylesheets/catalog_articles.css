@@ -241,7 +241,24 @@ hobby-header {
     }
 }
 
-
+.banner-ads {
+  border: 1px solid;
+  background-color: var(--bg-color);
+  padding: 20px;
+  width: 387px;
+  border-radius: 10px;
+    .demi-bold{
+        margin-top: 20px;
+        font-family: var(--trird-font);
+        font-size: 32px;
+        line-height: 110%;
+    }
+    .button {
+    margin-top: 116px;
+    display: flex;
+    gap: 10px;
+  }
+}
 
 
 .hobby-catalog{
